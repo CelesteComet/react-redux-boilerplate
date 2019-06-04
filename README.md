@@ -7,5 +7,5 @@ For development
 4. localhost:1234
 
 For production
-1. docker build -t <tagname> .
-2. docker run -p 80:80 <tagname>
+1. docker build -t \<tagname\> .
+2. docker run -p 80:80 \<tagname\>
