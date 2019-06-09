@@ -1,9 +1,10 @@
 import { tick } from '../actions';
+import { cloneDeep } from 'lodash';
 
 let defaultState = 0;
 
 const tickReducer = (state = defaultState, action) => {
-  let newState = state;
+  let newState = cloneDeep(state);
   switch (action.payload) {
     case 'DOWN':
       newState--;
